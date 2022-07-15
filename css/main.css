@@ -4,11 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    position: relative;
+}
+
+#fundo {
+   position: absolute;
+   width: 100%;
+}
+
 header {
+    background-color: rgba(207, 207, 207, 0.692);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid rgba(136, 136, 136, 0.5);
+    position: absolute;
     padding: 10px;
 }
 
@@ -23,20 +34,27 @@ header .logo img{
     padding: 5px;
 }
 
-body{
-    width: 100%;
-    height: 100%;
-}
-
-
-#fundo {
-    height: auto;
-    width: 100%;
-
-}
-
 footer {
+    background-color: rgb(26, 26, 26);
+    color: #dedede;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 800px;
+    width: 100%;
+    height: 90px;
+    position: absolute;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 24px;
+}
+
+footer a {
+    color: #dedede;
+    text-decoration: none;
+    padding: 4px;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
